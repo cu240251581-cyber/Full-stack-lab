@@ -695,3 +695,32 @@ footer p {
         gap: 10px;
     }
 }
+/* Cart Count Badge */
+#cart-count {
+    ...
+}
+
+/* Cart Product */
+.cart-product {
+    ...
+}
+
+/* Quantity Input */
+.quantity-input {
+    ...
+}
+
+/* Remove Button */
+.remove-btn {
+    ...
+}
+
+/* Empty Cart */
+.empty-cart {
+    ...
+}
+
+/* Error message */
+.error-message {
+    ...
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YourStore - Cart</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +16,10 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
+        <a href="cart.html">
+            Cart
+            <span id="cart-count">0</span>
+        </a>
     </nav>
 </header>
 
@@ -23,68 +27,30 @@
 
     <section class="section">
 
-        <h1>Your Shopping Cart</h1>
+    <h1>Your Shopping Cart</h1>
 
-        <div class="cart-container">
+    <div
+        class="cart-container"
+        id="cart-container">
+    </div>
 
-            <table class="cart-table">
+    <div class="cart-actions">
 
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                        <th>Subtotal</th>
-                    </tr>
-                </thead>
+        <a
+            href="products.html"
+            class="btn secondary-btn">
+            Continue Shopping
+        </a>
 
-                <tbody>
+        <a
+            href="checkout.html"
+            class="btn">
+            Proceed to Checkout
+        </a>
 
-                    <tr>
-                        <td>Wireless Headphones</td>
-                        <td>1</td>
-                        <td>₹2,499</td>
-                        <td>₹2,499</td>
-                    </tr>
+    </div>
 
-                    <tr>
-                        <td>Smart Watch</td>
-                        <td>1</td>
-                        <td>₹3,999</td>
-                        <td>₹3,999</td>
-                    </tr>
-
-                    <tr>
-                        <td>Running Shoes</td>
-                        <td>1</td>
-                        <td>₹2,999</td>
-                        <td>₹2,999</td>
-                    </tr>
-
-                </tbody>
-
-                <tfoot>
-                    <tr>
-                        <td colspan="3"><strong>Grand Total</strong></td>
-                        <td><strong>₹9,497</strong></td>
-                    </tr>
-                </tfoot>
-
-            </table>
-
-            <div class="cart-actions">
-                <a href="products.html" class="btn secondary-btn">
-                    Continue Shopping
-                </a>
-
-                <a href="checkout.html" class="btn">
-                    Proceed to Checkout
-                </a>
-            </div>
-
-        </div>
-
-    </section>
+</section>
 
 </main>
 

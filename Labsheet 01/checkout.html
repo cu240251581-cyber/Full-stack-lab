@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YourStore - Checkout</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +16,10 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
+        <a href="cart.html">
+            Cart
+            <span id="cart-count">0</span>
+        </a>
     </nav>
 </header>
 
@@ -30,7 +34,7 @@
                 Enter your details to complete your order.
             </p>
 
-            <form>
+            <form id="checkout-form">
 
                 <div class="form-group">
                     <label for="name">Full Name</label>
@@ -124,6 +128,10 @@
                 <button type="submit" class="btn order-btn">
                     Place Order
                 </button>
+                <div
+                    id="confirmation"
+                    style="display: none;">
+                </div>
 
             </form>
 

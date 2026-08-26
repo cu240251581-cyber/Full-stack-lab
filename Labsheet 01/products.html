@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YourStore - Products</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -15,140 +16,29 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
+        <a href="cart.html">
+            Cart
+            <span id="cart-count">0</span>
+        </a>
     </nav>
 </header>
 
 <main>
 
-    <section class="section">
-        <h1>Our Products</h1>
-        <p class="section-subtitle">Explore our latest products.</p>
+   <section class="section">
 
-        <div class="product-grid">
+    <h1>Our Products</h1>
 
-            <!-- Product 1 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
-                     alt="Wireless Headphones">
+    <p class="section-subtitle">
+        Explore our latest products.
+    </p>
 
-                <div class="product-info">
-                    <h3>Wireless Headphones</h3>
-                    <p>Premium wireless headphones with clear sound.</p>
-                    <p class="price">₹2,499</p>
+    <div
+        class="product-grid"
+        id="product-container">
+    </div>
 
-                    <a href="product-detail.html" class="btn">
-                        View Details
-                    </a>
-
-                    <button class="btn secondary-btn">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
-                     alt="Smart Watch">
-
-                <div class="product-info">
-                    <h3>Smart Watch</h3>
-                    <p>Track your fitness and stay connected.</p>
-                    <p class="price">₹3,999</p>
-
-                    <a href="product-detail.html" class="btn">
-                        View Details
-                    </a>
-
-                    <button class="btn secondary-btn">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
-                     alt="Running Shoes">
-
-                <div class="product-info">
-                    <h3>Running Shoes</h3>
-                    <p>Comfortable and stylish shoes for everyday use.</p>
-                    <p class="price">₹2,999</p>
-
-                    <a href="product-detail.html" class="btn">
-                        View Details
-                    </a>
-
-                    <button class="btn secondary-btn">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80"
-                     alt="Digital Camera">
-
-                <div class="product-info">
-                    <h3>Digital Camera</h3>
-                    <p>Capture beautiful moments with high quality.</p>
-                    <p class="price">₹8,999</p>
-
-                    <a href="product-detail.html" class="btn">
-                        View Details
-                    </a>
-
-                    <button class="btn secondary-btn">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80"
-                     alt="Camera">
-
-                <div class="product-info">
-                    <h3>Premium Camera</h3>
-                    <p>Professional camera for photography lovers.</p>
-                    <p class="price">₹12,999</p>
-
-                    <a href="product-detail.html" class="btn">
-                        View Details
-                    </a>
-
-                    <button class="btn secondary-btn">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-
-            <!-- Product 6 -->
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=600&q=80"
-                     alt="Electronics">
-
-                <div class="product-info">
-                    <h3>Gaming Accessories</h3>
-                    <p>Upgrade your gaming experience.</p>
-                    <p class="price">₹4,499</p>
-
-                    <a href="product-detail.html" class="btn">
-                        View Details
-                    </a>
-
-                    <button class="btn secondary-btn">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-
-        </div>
-    </section>
+</section>
 
 </main>
 
